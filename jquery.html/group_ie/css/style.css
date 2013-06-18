@@ -1,0 +1,12 @@
+#wrapper {
+	background-color: black;
+	height: 600px;
+	width: 800px;
+
+}
+h2{
+	color: yellow;
+}
+form{
+	display: inline;
+}

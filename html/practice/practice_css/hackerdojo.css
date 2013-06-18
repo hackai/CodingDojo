@@ -1,0 +1,98 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper {
+    width: 800px;
+    margin: 0px auto;
+}
+#header{
+    background-image:url('hacker_dojo_logo.PNG');
+    text-align: right;
+    font-family: verdana;
+    height: 50px;
+    padding: 2px;
+    word-spacing: 10px;
+}
+
+.header_image{
+    width: 850px;
+}
+
+hr{
+    height: 5px;
+    color: #A3213D;
+    background-color: #A3213D;
+}
+
+.footer{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.dotted_line{
+    border: 2px dotted #ABABAB;
+}
+
+/*main content styles */
+.clear {
+    clear: both;
+}
+
+/* main content tags */
+#main_content {
+    
+    height: 210px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+#main_content div {
+    display: inline-block;
+
+}
+
+#content_left {
+    float: left;
+    width: 520px;
+}
+
+.news_content {
+    height: 95px;
+    width: 250px;
+}
+
+.news_content p {
+    border-left: 4px solid grey;
+}
+
+.news_content {
+    border-left: 4px solid grey;
+}
+
+#content_right {
+    float: left;
+}
+
+.map {
+    width: 240px;
+    height: 208px;
+}
+
+.map img {
+    height: 134px; 
+    width: 219px;
+}
+
+.map img, p {
+    border-left: 4px solid grey;
+}
+
+.map p {
+     border-left: 4px solid grey;
+}
+
+.map a {
+    border: 0px;
+}

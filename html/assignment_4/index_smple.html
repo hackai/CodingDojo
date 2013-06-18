@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+	<title>JQuery Exercise</title>
+	<script type="text/javascript" src="js/jquery_code.js"></script>
+
+	<script type="text/javascript">
+		
+		//run the following functions/stuff when the documet is ready
+		$(document).ready(function(){
+
+			$("#sortable").sortable();
+			$('h1').click(function(){
+				alert('clicked on h1');
+				$('#special').fadeOut();
+
+			});
+			$('h2').click(function(){
+				alert('clicked on h2');
+					$('#special').fadeIn();		
+
+			});
+		});
+	</script>
+</head>
+<body>
+	<ul id="sortable">
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+		<li>Item 5</li>
+		<li>Item 6</li>
+		<li>Item 7</li>
+	</ul>
+
+</body>
+</html>

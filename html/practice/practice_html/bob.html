@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>My First Web Page</title>
+		<style>
+			body{background-image: url('html.png')}
+		</style>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+
+	<body>
+		<div id="nav">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">About Us</a></li>
+				<li><a href="">Contact Us</a></li>
+			</ul>
+		</div>
+		<div id="wrapper">
+			<h1>Welcome to my Website</h1>
+			<p>I am now attending the HTML/CSS Course provided by Village88 and I am having fun!</p><br>
+			<img src="images/html.png" alt="Village88 HTML and CSS Course" height="180" width="160"/> <br/>
+			<a href="http://www.village88.com/training" target="_blank">Click here to check the site.</a><br/>
+			<a href="#">Click here to check my profile.</a>
+		</div>
+		<h1>Add a User</h1>
+			<form action="process.php" method="post">
+				<label for="first_name">First Name:</label>
+				<input type="text" name="first_name" id ="first_name" /><br />
+				<label for="last_name">Last Name:</label>
+				<input type="text" name="last_name" id="last_name" /><br />
+				<label for="email">Email Address:</label>
+				<input type="text" name="email_address" id="email" /><br />
+				<label for="username">Username:</label>
+				<input type="text" name="username" id="username" /><br />
+				<label for="password">Password:</label>
+				<input type="password" name="password" id="password" /><br />
+				<label>Gender:</label>
+				<input type="radio" name="gender" value="male" />Male
+				<input type="radio" name="gender" value="female" />Female <br/>
+				<input type="submit" value="Add User" />
+			</form>
+			<h1>Please register...</h1>
+			<form action="process.php" method="post">
+				<label for="req_first_name">First Name:</label>
+				<input type="text" name="first_name" id="req_first_name" /><br/>
+				<label for="req_last_name">Last Name:</label>
+				<input type="text" name="last_name" id="req_last_name" /><br/>
+				<label for="req_username">Username:</label>
+				<input type="text" name="username" id="req_username" /><br/>
+				<label for="req_confirm_pw">Password:</label>
+				<input type="password" name="confirm_pw" id="req_confirm_pw" /><br/>
+				<label >Gender:</label><br/>
+				<input type="radio" name="gender" value="male"/>Male<br/>
+				<input type="radio" name="gender" value="female"/>Female<br/>
+				<label >Marital Status:</label>
+				<select name="marital_status">
+				<option value="single">Single</option>
+				<option value="maried">Married</option>
+				<option value="separated">Separated</option>
+				<option value="widow">Widow</option>
+				</select>
+		</form>
+		<h1>Welcome to this picture</h1>
+	<img src="images/boris.png" alt="Boris" height="260" width="190"/>
+<br>
+	<img src="images/Recent1.jpg" alt="Recent1" height="180" width="160"/>
+	<h1>My List</h1>
+	<h2>Books I've Read</h2>
+		<ol>
+			<li>Finance Managerial for MBSs</li>
+			<li>Best Organizzational Books</li>
+			<li>Who stole my chees</li>
+		</ol>
+		<h2>Favorite Travel Destinations</h2>
+		<ul>
+			<li>Norway</li>
+			<li>Utah</li>
+			<li>Africa</li>
+		</ul>
+		<h1>Welcome</h1>
+		<h2>My Grocery</h2>
+
+		<table border=1>
+				<thead>
+					<tr>
+						<th>Items</th>
+						<th>Quantety</th>
+						<th>Amount</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Vegetables</td>	
+						<td>$10</td>	
+						<td>$20</td>	
+					</tr>
+					<tr>
+						<td>Meat</td>
+						<td>2</td>
+						<td>$90</td>
+					</tr>
+					<tr>
+						<td>Fruits</td>
+						<td>20</td>
+						<td>$50</td>
+					</tr>
+				</tbody>
+			</table>	
+				<h1>How to Minimize Risk</h1>
+
+		<div id="content">
+			<h2>Resource Availability</h2>
+			<p>Schedule their tasks as early as possible <span style="color:blue;"> to allow for time off</span> project. Reflect likely availability when planning resources. Have a backup person on the team.</p>
+		</div>
+		
+		<div class="content">
+			<h2>Establish availability</h2>
+			<p>Treat it as fixed to avoid conflicts, and drive dependencies to ensure they can start work when they are available.</p>
+		</div>
+
+		<div>
+			Talk to vendors to establish their dependencies and risks. Don’t make assumptions for vendors.
+		</div>
+		<h1>Subscription Form</h1>
+		<form action="process.php" method="post">
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name"/><br/>
+			<label for="_email">Email:</label>
+			<input type="text" name="email_address" id="_email"/>
+			<label for="_password">Password:</label>
+			<input type="password" name="password" id="_password"/><br/>
+			<label>Gender:</label><br/>
+			<input type="radio" name="gender" value="male"/>Male<br/>
+			<input type="radio" name="gender" value="female"/>Female<br/>
+			<label>Interest:</label><br/>
+			<input type="checkbox" name="interest" value="gadgets"/>Gadgets<br/>
+			<input type="checkbox" name="interest" value="family"/>Family<br/>
+			<input type="checkbox" name="interest" value="Technology"/>Technology<br/>
+			<label>Frequency:</label><br/>
+			<select name="subscription frequency">
+				<option value="annual">Annual</option>
+				<option value="monthly">Monthly</option>
+				<option value="weekly">Weekly</option>
+			</select>
+			<input type="hidden" name="company" value="CodingDojo"/>
+			<input type="submit" value="Subscribe" />
+		</form>
+	</body>
+</html>

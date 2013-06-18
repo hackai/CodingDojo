@@ -1,0 +1,136 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-size: 8pt;
+	font-family: Arial;
+	vertical-align: baseline;
+	background-repeat:repeat-x;
+} 
+ul {
+	list-style: none;
+} 
+.clear{
+	clear:both;
+}
+.highlighted_info{
+	font-weight:bold;
+}
+body{
+	background-color:black;
+}
+#wrapper{
+	background-image:url(large_back.png);
+}
+h1, h2, h3{
+	font-weight:bold;
+}
+h1{
+	font-size:18px;
+	float:right;
+	padding-top:40px;
+}
+#header{
+    margin-left:auto;
+	margin-right:auto;
+	width:800px;
+	overflow:auto;
+}
+	#header img{
+		float:left;
+	}
+	#header ul{
+		float:left;
+		margin-left:30px;
+		margin-top:14px;
+	}
+		#header ul li{
+			display:inline;
+			border-left:2px ridge #DEDEDE;		
+		}
+		#header ul li:last-of-type{
+			border-right:2px ridge #DEDEDE;
+		}
+			#header ul li a{
+				text-decoration:none;
+				font-weight:bold;
+				color:#747078;	
+				margin:0 10px;
+			}
+#main_body{
+	margin-top:60px;
+    margin-left:auto;
+	margin-right:auto;
+	width:800px;
+}
+	#main_body img{
+		float:left;
+	}
+	#main_body p{
+		float:left;
+	}
+#ppc_info, #small_ppc_icon {
+	color:#768559;
+	margin-left:10px;
+	margin-top:10px;
+}
+#main_content{
+	width:380px;
+	height:262px;
+	float:left;
+	margin-left:20px;
+	color:white;
+	background-color:#515151;
+}
+	#main_content h2{
+		width:366px;
+		margin-bottom:9px;
+		color:black;
+	}
+	#main_content h2, .sub_menu h2{
+		height:22px;
+		padding-top:6px;
+		padding-left:14px;
+		background-image:url(yellow_back.png);
+	}
+	#main_content h3, #main_content p{
+		margin-right:8px;
+		margin-left:16px;
+		margin-bottom:11px;
+	}
+	#main_content p, .highlighted_info{
+		font-size:7pt;
+	}
+#main_image{
+	border:3px solid white;
+}
+.menu_img, .sub_menu{
+	width:185px;
+	float:left;
+	margin-right:15px;
+}
+	.menu_img{
+		margin-bottom:10px;
+	}
+	.sub_menu{
+		margin-top:10px;
+		background-color:#FFF5DF;
+	}
+		.sub_menu p{
+			margin:0 10px;
+		}
+.sub_menu_select {
+		background-color: #FDC700;
+		text-align: right;
+		margin:10px;
+		margin-right:20px;
+		border: 3px solid black;
+		float:right;
+		text-decoration:none;
+		color:black;
+		font-weight:bold;
+		font-size:7pt;
+	}
+		
+h1, #main_body h2, .sub_menu_select a, #header ul li a{
+	text-transform:uppercase;
+}

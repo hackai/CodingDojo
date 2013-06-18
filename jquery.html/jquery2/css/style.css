@@ -1,0 +1,21 @@
+#wrapper{
+	color: blue;
+	border: 1px solid red;
+	height: 500px;
+	width: 800px;
+	padding: auto;
+}
+img{
+	width: 120px;
+	margin: 8px;
+	
+}
+button{
+	color: white;
+	background-color: green;
+	margin-top: 20px;
+	border: 2px solid black;
+}
+div{
+	display: inline-block;
+}

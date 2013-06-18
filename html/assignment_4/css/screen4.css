@@ -1,0 +1,95 @@
+#wrapper{
+	width: 880px;
+	margin: auto;
+	background-color: #242020;
+	height: 1000px;
+}
+#header li{
+	display: inline;
+	border-right: 2px solid gray;
+	padding: 3px;
+	background-color: #e5edf0;
+}
+#header ul{
+	background-color: #e5edf0;
+	height: 30px;
+}
+#main_content h3{
+	background-color: #FFD33B;
+}
+
+#main_content{
+	margin-left: 10px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+#main_content img{
+	float: left;
+	height: 300px;
+	width: 350px;
+}
+/*Contnet Header and logo, same hight*/
+#content_header{
+	float: left;
+	width: 450px;
+	height: 300px;
+	margin-left: 10px;
+	background-color: gray;
+	color: white;
+}
+#content_header h3{
+	margin-top: 2px;	
+	padding: 5px;
+	height: 20px;
+	
+}
+#small_logo{
+	margin-left: 20px;
+	height: 20px;
+}
+#small_logo p{
+	color: yellow;
+	font-size: 11px;
+}
+#small_logo img{
+	height: 10px;
+	width: 40px;
+}
+.services{
+	width: 200px;
+	float: left;
+	margin-top: 15px;
+	border:1px solid black;
+	height: 300px;
+	margin-right: 12px;
+	margin-left: 5px;
+	background-color: white;
+}
+.services img{
+	width: 200px;
+	height: 150px;
+	padding-bottom: 10px;
+}
+.services p{
+	width: 190px;
+	font-size: 13px;
+	height: 55px;
+	padding: 12px;
+	margin-bottom: 20px;
+	margin-top: 1px;
+}
+.services button{
+	background-color: #FFD33B;
+	margin-left: 80px;
+}
+.auto{
+	border: 40px;	
+	border-top: 200px;
+
+}
+.bold{
+	font-weight: bold;
+}
+.clear{
+ 	clear:both;
+}

@@ -1,0 +1,18 @@
+table {
+	width:800px;
+	border:1px solid black;
+}
+
+table th {
+	text-align: left;
+	
+}
+
+table tr:nth-child(5n+5) {
+	background-color:black;
+	color:white;
+}
+
+table td {
+	border:1px solid black;
+}

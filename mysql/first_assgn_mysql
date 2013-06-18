@@ -1,0 +1,24 @@
+SELECT COUNT(city.countrycode) AS 'number of cities', country.name AS 'country name' 
+FROM country
+JOIN city 
+ON country.Code = city.CountryCode
+GROUP BY country.name
+ORDER BY COUNT(city.name) DESC;
+
+
+SELECT city.name AS 'city name', city.population 
+FROM city
+JOIN country
+ON country.code = city.countrycode
+WHERE city.population > 500000 and country.name = 'Mexico'
+ORDER BY city.population DESC;
+
+SELECT countrylanguage.language, countrylanguage.percentage
+FROM countrylanguage
+WHERE countrylanguage.percentage > 89
+ORDER BY countrylanguage.percentage DESC; 
+
+SELECT country.name, country.surfacearea, country.population
+FROM country
+WHERE country.surfacearea < 501 and country.population > 100000;
+

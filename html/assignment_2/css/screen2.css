@@ -1,0 +1,107 @@
+/*reset marging*/
+
+*{
+	font-family: verdana;
+	font-size: 12;
+}
+
+#header ul li a{
+	font-weight: bold;
+}
+#header ul li{
+	display: inline;
+	border-right: 1px solid gray; 
+}
+#header ul{
+	float: right;
+	font-size: 6pt;
+	color: yellow;
+}
+#header ul#contact {
+	font-size: 6pt;
+	color: white;
+
+}
+#header form{
+	float:right;
+}
+#header ul#contact a{
+	color: yellow;
+}
+#navbar a{
+	font-size: 10px;
+	color: gray;
+	margin-right: 40px;
+	text-decoration: none;
+
+}
+#header{
+	height: 90px;
+	width: 865px;
+	background-image:url("images/Screen-2Head.png");
+	background-repeat: no-repeat;
+}
+#header h1{
+	font-size: 20pt;
+	float: left;
+	margin-left: 280px;
+	color: white;
+	font-family: serif;
+	font-weight: normal;
+
+}
+.bold{
+	font-weight: bold;
+}
+#wrapper{ 
+	width:865px;
+}
+#nav {
+	width:200px;
+	float: left;
+	background-color: #f2e1e1;
+	list-style: none;
+	padding-top: 10px;
+	line-height: 2.5;
+	margin-top: 20px;
+	margin-right: 0px;
+}
+#nav ul{
+	list-style: none;
+	font-size: 10px;
+	width: 450px;
+}
+#nav li {
+	color: red;
+	
+}
+#nav li a{
+	color:red;
+}
+.color{
+	color: red;
+}
+#main_content{
+	width: 550px;
+	float: left;
+	margin-top: 15px;
+	padding: 15px;
+	margin-left: 5px;
+}
+#main_content li a{
+	font-weight: red;
+}
+#main_content h2{
+	margin-top: 0px;
+	color: darkred;
+}
+#main_content h3{
+	color: darkred;
+	font-size: 14px;
+	font-style: bold;
+}
+#main_content h3.border_line{
+	border-top: 1px solid gray;
+	padding-top: 5px;
+}
+<--!end of borders-->

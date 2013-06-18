@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>jQuery-assignment 2 </title>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+				$("#datepicker").datepicker();
+	 			$("#datepicker_to").datepicker();
+				$('#dialog').hide();
+				$('#submit').click(function(){
+					var information = "Your form information:</br>From:"+$('#datepicker').val()+"</br>Date To:"+$('#datepicker_to').val();
+					$('#dialog').html(information);
+					$('#dialog').show();
+					// $('#dialog, .ui-dialog').dialog();
+					// $('#dialog').show(2000);
+				});
+		
+			});
+		</script>
+
+
+			<!--End of jQuery-->
+
+	</head>
+	<body>
+		<div id="wrapper">
+			<div>
+				<h2>jQuery-assignment 2</h2>
+				<p>From: <input type="text" id="datepicker"/></p>
+				<p>Date To: <input type="text" id="datepicker_to"/></p>
+				
+				<button id="submit">Submit</button>
+				
+				<div id='dialog' title="Date Info">
+					
+				</div>
+			</div>
+
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+h3{
+	color: blue;
+}
+table {
+	border: 1px solid black;
+	width: 820px;
+}
+table tr:nth-child(5n+5){
+	background-color: black;
+	color: white;
+}
+
+table td{
+	border: 1px solid black;
+}
+

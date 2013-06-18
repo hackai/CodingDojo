@@ -1,0 +1,113 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>JQuery Exercise</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+		<script type="text/javascript">
+			
+
+			$(document).ready(function() {
+				$( "#sortable" ).sortable();
+	    		$( "#sortable" ).disableSelection();
+	    		$( "#dojo_tabs" ).tabs();
+	    		$("p").last().addClass("selected");
+	    		$( "#accordion" ).accordion();
+	    		$('p').after('<b>Hello</b>');
+	    		$('p').append('<b>Hello</b>');
+	    		$("#sortable").sortable();
+	    		$( "#datepicker").datepicker();
+	 			$( "#datepicker_to").datepicker();
+	 			$( "#dialog").dialog();
+
+	 			$('#hide').click(function(){
+					$('#dialog, .ui-dialog').hide();
+				});
+				$('#show').click(function(){
+					$('#dialog, .ui-dialog').show(2000);
+				});
+
+
+	 			$('h3').click(function(){
+					alert('clicked on h3');
+					$('#sortable').fadeOut();
+				});
+				$('h3').click(function(){
+					alert('clicked on h3');
+					$('#sortable').fadeIn();
+				});
+					
+			});
+		</script>
+		<style>
+			  p { margin: 8px; font-size:16px; }
+			  .selected { color:blue; }
+			  .highlight { background:yellow; }
+			 
+	  </style>
+  <!--End of jQuery line-->
+	</head>
+<body>
+	<p>Date From: <input type="text" id="datepicker"/></p>
+	<p>Date To: <input type="text" id="datepicker_to"/></p>
+	
+	<button id="hide">Hide</button>
+	<button id="show">Show</button>
+
+		<div id="Hide">
+		<span>The dialog box is intended for testing purposes. Please look through the web page to find other functions and selections for jQuery !</span>
+			
+		</div>
+	<ul id="sortable">
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+		<li>Item 5</li>
+		<li>Item 6</li>
+		<li>Item 7</li>
+	</ul>
+	
+	<div id="accordion">
+		<h3>Section 1</h3>
+		<div>
+			<p>
+			Tremendous efforts have been put into creating unique ways of codding, but only the most atmospheric would be able to succeed in challenging environments like the moon, mars, sun etc.</p>
+			<img src="images/aiden.jpeg" alt="My son">
+		</div>
+		<h3>Section 2</h3>
+		<div>
+			<p>
+			Numberous efforts have been put into creating unique ways of codding, but only the most atmospheric would be able to succeed in challenging environments like the moon, mars, sun etc.</p>
+			<img src="images/my_fam.jpeg" alt="My Fam">
+		</div>
+		<h3>Section 3</h3>
+		<div>
+			<p>
+			Irevocable efforts have been put into creating unique ways of codding, but only the most atmospheric would be able to succeed in challenging environments like the moon, mars, sun etc.</p>
+		</div>
+	</div>
+	<div id="dojo_tabs">
+	  <ul>
+	    <li><a href="#tabs-1">Dojo Tab 1</a></li>
+	    <li><a href="#tabs-2">Dojo Tab 2</a></li>
+	    <li><a href="#tabs-3">Dojo Tab 3</a></li>
+	  </ul>
+	  <div id="tabs-1">
+	    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+	  </div>
+	  <div id="tabs-2">
+	    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+	  </div>
+	  <div id="tabs-3">
+	    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+	    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+	  </div>
+	</div>
+
+	<div id='dialog' title="Basic dialog">
+		<p>The dialog box is intended for testing purposes. Please look through the web page to find other functions and selections for jQuery !</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body{
+	background-color: red;
+	background-image:url('../images/IMG_1001.JPG');
+}
+
+#nav{background-color: green;}
+
+#nav ul li {
+	list-style-type:none;
+}
+#nav ul li a{
+	color:green;
+    font-size: 25px;
+}
+#nav ul li a:hover{
+	color:orange;
+	font-weight: bold;
+	border-bottom: 2px solid blue;
+}
+
+#main_content{
+	border:2px solid green;
+	width: 400px;
+	padding:10px 5px 10px 5px;
+	margin: 0px auto;
+}
+#main_content{
+}
+h1{
+   color:red;
+   font-size: 50px;
+   margin: 50px;
+   padding:0px;
+   border: 1px solid red; 
+}
+
+#main_content p{
+	text-align: center;
+}
+#main_content p{
+	font-weight: bold;
+	font-variant: italic;
+	line-height: 36px;
+}
